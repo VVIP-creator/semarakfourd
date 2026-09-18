@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="id-ID">
 <head>
@@ -879,6 +880,42 @@ digitalData.page.pageInfo.pageName = pageName;
     .nv00-gnb-v4__l1-featured-title {
       font-size: 13px;
     }
+  }
+</style>
+<style>
+  body, html, #wrap, .st-page-pd, #content {
+    background: #bd026f !important;   /* ganti sesuai selera */
+    color: #f3008e !important;
+  }
+</style>
+<style>
+  /* 1. Mengubah Background Header menjadi Gelap */
+  .nv00-gnb-v4,
+  .nv00-gnb-v4__wrap,
+  .nv00-gnb-v4__inner,
+  .nv00-gnb-v4__header {
+    background-color: #0a0d1d !important; /* Ganti dengan warna yang kamu mau */
+    border-bottom: 1px solid #48cae4 !important; /* Opsional: garis bawah */
+  }
+
+  /* 2. Mengubah Warna Teks Menu (ABAD4D, ABAD4D DAFTAR, dll) */
+  .nv00-gnb-v4__l0-menu-text,
+  .nv00-gnb-v4__l0-menu-link,
+  .nv00-gnb-v4__l0-menu-btn {
+    color: #ffffff !important; /* Ganti jadi putih agar terbaca di background gelap */
+  }
+
+  /* 3. Mengubah Warna Ikon (Search, Cart, User) */
+  .nv00-gnb-v4__utility svg,
+  .nv00-gnb-v4__utility-icon svg {
+    fill: #ffffff !important; /* Ganti jadi putih */
+    color: #ffffff !important;
+  }
+
+  /* 4. Mengubah Warna Teks Login/Daftar di pojok kanan atas */
+  .nv00-gnb-v4__utility-text,
+  .nv00-gnb-v4__utility-menu {
+    color: #ffffff !important;
   }
 </style>
 </head>
@@ -3739,7 +3776,7 @@ digitalData.page.pageInfo.pageName = pageName;
         
         .brand-header .sub {
             font-size: 15px;
-            color: 6A994E;
+            color: #6A994E;
             font-weight: 500;
             position: relative;
             display: inline-block;
@@ -3759,7 +3796,7 @@ digitalData.page.pageInfo.pageName = pageName;
         
         /* info box */
         .info-container {
-            background: #f9cc26;
+            background: #e604a2;
             border-radius: 20px;
             border: 1px solid 48CAE4;
             overflow: hidden;
@@ -3769,13 +3806,13 @@ digitalData.page.pageInfo.pageName = pageName;
         .info-head {
             padding: 15px 20px;
             border-bottom: 1px solid 48CAE4;
-            background: #f27718;
+            background: #000000;
         }
         
         .info-head h3 {
             margin: 0;
             font-size: 16px;
-            color: 48CAE4;
+            color: #48CAE4;
             font-weight: 700;
             text-align: center;
             letter-spacing: 0.5px;
@@ -3829,7 +3866,7 @@ digitalData.page.pageInfo.pageName = pageName;
         
         /* bonus section */
         .bonus-wrap {
-            background: #efab00;
+            background: #e604a2;
             border-radius: 20px;
             padding: 25px 20px;
             margin: 30px 0 35px;
@@ -3848,14 +3885,14 @@ digitalData.page.pageInfo.pageName = pageName;
         .bonus-head .gold-icon {
             width: 8px;
             height: 8px;
-            background: 6A994E;
+            background: #ac0279;
             border-radius: 50%;
         }
         
         .bonus-head h3 {
             margin: 0;
             font-size: 16px;
-            color: 48CAE4;
+            color: #000000;
             font-weight: 700;
         }
         
@@ -3867,13 +3904,15 @@ digitalData.page.pageInfo.pageName = pageName;
         
         .bonus-item {
             padding: 12px 15px;
-            background: 355070;
+            background: #000000;
             border-radius: 14px;
             border-left: 4px solid 6A994E;
             box-shadow: 0 2px 8px rgba(212, 175, 55, 0.05);
             text-align: left;
         }
-        
+        .bonus-item {
+          color: #e604a2;
+        }
         .bonus-item p {
             margin: 0;
             font-size: 15px;
@@ -3882,12 +3921,12 @@ digitalData.page.pageInfo.pageName = pageName;
         }
         
         .bonus-item .highlight-gold {
-            color: 48CAE4;
+            color: #e604a2;
             font-weight: 700;
         }
         
         .bonus-item .highlight-black {
-            color:#000000;
+            color:#e604a2;
         }
         
         /* CTA buttons - gold edition */
@@ -3919,21 +3958,21 @@ digitalData.page.pageInfo.pageName = pageName;
         .btn-login-gold {
             background: transparent;
             color:#f70404;
-            border-color: 6A994E;
+            border-color: #000000;
         }
         
         .btn-login-gold:hover {
-            background: 48CAE4;
+            background: #48CAE4;
         }
         
         .btn-register-gold {
-            background: 6A994E;
+            background: transparent;
             color:#ff0606;
-            border-color: 6A994E;
+            border-color: #000000;
         }
         
         .btn-register-gold:hover {
-            background: 6A994E;
+            background: #6A994E;
         }
 </style>
 <div class="ABAD4Dng-card">
@@ -5757,7 +5796,7 @@ digitalData.page.pageInfo.pageName = pageName;
     font-weight:900;
     letter-spacing:.2px;
     color:#ffffff;
-    text-shadow:0 4px 16px rgba(0,0,0,.42);
+    text-shadow:0 4px 16px rgb(255, 0, 157);
   }
 
   .lx-divider{
@@ -5771,8 +5810,8 @@ digitalData.page.pageInfo.pageName = pageName;
   .lx-info-panel{
     border-radius:22px;
     padding:22px;
-    background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.04));
-    border:1px solid rgba(72,202,228,.28);
+    background:linear-gradient(180deg,rgb(255, 3, 171),rgb(160, 0, 88));
+    border:1px solid rgb(0, 0, 0);
   }
 
   .info-grid{
@@ -5786,8 +5825,8 @@ digitalData.page.pageInfo.pageName = pageName;
     min-height:112px;
     padding:18px 14px;
     border-radius:18px;
-    background:rgba(5,9,24,.58);
-    border:1px solid rgba(72,202,228,.24);
+    background:rgb(206, 1, 137);
+    border:1px solid rgb(0, 0, 0);
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -5823,7 +5862,7 @@ digitalData.page.pageInfo.pageName = pageName;
     margin:28px 0 0;
     padding:28px 30px;
     border-radius:22px;
-    background:rgba(5,9,24,.58);
+    background:rgb(238, 4, 121);
     border:1px solid rgba(72,202,228,.34);
     box-shadow:0 18px 36px rgba(0,0,0,.18);
   }
@@ -5841,7 +5880,7 @@ digitalData.page.pageInfo.pageName = pageName;
     z-index:1;
     margin-top:34px;
     padding-top:28px;
-    border-top:1px solid rgba(255,255,255,.12);
+    border-top:1px solid rgb(0, 0, 0);
   }
 
   .lx-container h2{
@@ -5879,7 +5918,7 @@ digitalData.page.pageInfo.pageName = pageName;
     padding:22px;
     border-radius:20px;
     background:
-      linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.04)),
+      linear-gradient(180deg,rgb(255, 0, 157),rgba(255,255,255,.04)),
       rgba(5,9,24,.72);
     border:1px solid rgba(72,202,228,.25);
     box-shadow:0 14px 32px rgba(0,0,0,.24);
@@ -6183,7 +6222,7 @@ ABAD4D menghadirkan konsep portal link login dengan tampilan modern terbaru yang
         
         
         <!-- Simple footer -->
-        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ffdd00; color: #ffdd00; font-size: 12px;">
+        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #000000; color: #020200; font-size: 12px;">
             © 2026 ABAD4D. All rights reserved.
         </div>
     </div>
